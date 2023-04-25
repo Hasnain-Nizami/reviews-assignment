@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ececec;
+}
+.sec{
+    width: 50%;
+    background-color:rgb(20, 20, 20);
+    box-shadow: 0px 1px 16px 10px rgba(195, 194, 194, 0.75);
+    padding: 40px;
+    gap: 3px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #9e9d9d;
+}
+.bluetick{
+    display: flex;
+    align-items: center;
+}
+.circle{
+    position: relative;
+    width: 120px;
+    height: 120px;
+}
+.box{
+    position: absolute;
+    width: 105%;
+    height: 105%;
+    background: linear-gradient(45deg, blue, transparent), radial-gradient(red, transparent);
+    border-radius: 50%;
+    z-index: 1;
+    left: -2.5%;
+    top: -2.5%;
+}
+.circle img{
+    position: absolute;
+    left: 0;
+    z-index: 2;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-image: url(./image/ronaldo.jpg);
+    background-position: center;
+    background-size: cover;
+    /* overflow: hidden; */
+}
+.partcir{
+    display: flex;
+    justify-content: center;
+}
+.pera{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.pera p{
+    text-align: center;
+    line-height: 1.3rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.fonts{
+    display: flex;
+    justify-content: space-around;
+    font-size: 22px;
+    width: 30%;
+}
+.fonts i:hover{
+    cursor: pointer;
+}
+
+@media screen and (max-width : 650px){
+    .sec{
+      width: 80%;
+    }
+}
+@media screen and (max-width : 400px){
+    .sec{
+      width: 95%;
+      padding: 20px;
+    }
+    .name{
+        font-size: 22px;
+    }
+}
